@@ -1,0 +1,45 @@
+/* #optanon ul#optanon-menu li {
+    background-color:  !important
+}
+
+#optanon ul#optanon-menu li.menu-item-selected {
+    background-color:  !important
+} */
+
+#optanon #optanon-popup-wrapper .optanon-white-button-middle {
+    background-color: #002d74 !important
+}
+
+.optanon-alert-box-wrapper .optanon-alert-box-button-middle {
+    background-color: #002d74 !important;
+    border-color: #002d74 !important
+}
+
+#optanon #optanon-popup-wrapper .optanon-white-button-middle button {
+    color: #fff !important
+}
+
+.optanon-alert-box-wrapper .optanon-alert-box-button-middle button {
+    color: #fff !important
+}
+
+#optanon #optanon-popup-bottom {
+    background-color: #fff !important
+}
+
+#optanon.modern #optanon-popup-top,
+#optanon.modern #optanon-popup-body-left-shading {
+    background-color: #fff !important
+}
+
+.optanon-alert-box-wrapper {
+    background-color: #d7dde0 !important
+}
+
+.optanon-alert-box-wrapper .optanon-alert-box-bg p {
+    color: #030303 !important
+}
+
+#optanon #optanon-popup-body-left-shading {
+    background-color: #fff
+}

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/logo-08.png" type="image/png" sizes="16x16">
+    <title>Home page</title>
+    <link rel="preload" href="./assets/fonts/AcuminPro-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/AcuminPro-Semibold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/AcuminPro-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/AcuminPro-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/libs/slick/slick.css">
+    <link rel="stylesheet" href="./assets/libs/aos/aos.css">
+    <link rel="stylesheet" href="./assets/libs/jquery-ui/jquery-ui.min.css">
+    <link href="././assets/css/main.min.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+    <div class="main">
+        <section id="headers">
+            <div class="container">
+                <nav class="header-top"><a class="logo" href="/fintechgame"><img src="./assets/images/logo.png" alt=""
+                            width="150"></a>
+                    <ul class="menu-list news">
+                        <li><a href="./news.html">News</a></li>
+                    </ul>
+                    <div class="menu">
+                        <ul class="menu-list">
+                            <li class="dropdown"><a href="./about.html">About us</a></li>
+                            <li class="dropdown"><a href="#contract">Constracts</a></li>
+                            <li><a href="#contract">Support</a></li>
+                            <li class="lang"><a href="">EN </a><svg id="Layer_1" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewbox="0 0 491.996 491.996"
+                                    style="enable-background: new 0 0 491.996 491.996" xml:space="preserve">
+                                    <g>
+                                        <g></g>
+                                        <path
+                                            d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848                L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128                c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084                c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224                C491.996,136.902,489.204,130.046,484.132,124.986z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <ul class="sub-menu">
+                                    <li><a href="#">EN</a></li>
+                                    <li><a href="#">GERMANY</a></li>
+                                </ul>
+                            </li>
+                        </ul><a class="button button--transparent" href=""> <span>Your Office </span></a><button
+                            class="menu-mobile"><svg width="1em" height="1em" viewbox="0 0 22 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0h22v2H0V0zm0 7h22v2H0V7zm22 7H0v2h22v-2z" fill=""></path>
+                            </svg></button>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu-toggle">
+                <div class="container">
+                    <div class="menu-top-mobile"><a class="logo" href=""><img src="./assets/images/logo-blue.png" alt=""
+                                width="130"></a>
+                        <div class="menu-toggle--right"> <a class="button button--primary" href=""><span>Your Office
+                                </span></a><span class="close-icon"><svg width="1em" height="1em" viewbox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.9 11.314l8.485 8.485 1.414-1.414L11.314 9.9l8.485-8.486L18.385 0 9.9 8.485 1.414 0 0 1.414 8.485 9.9 0 18.385l1.414 1.414L9.9 11.314z">
+                                    </path>
+                                </svg></span></div>
+                    </div>
+                    <div class="menu-togger-mobile">
+                        <ul class="menu-list news">
+                            <li><a href="">News</a></li>
+                        </ul>
+                        <ul class="menu-list">
+                            <li class="dropdown"><a href="/about.html">About us</a></li>
+                            <li class="dropdown"><a href="#contract">Constracts</a></li>
+                            <li><a href="#contract">Support</a></li>
+                            <li class="lang"><a href="">EN </a><svg id="Layer_1" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewbox="0 0 491.996 491.996"
+                                    style="enable-background: new 0 0 491.996 491.996" xml:space="preserve">
+                                    <g>
+                                        <g></g>
+                                        <path
+                                            d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848                L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128                c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084                c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224                C491.996,136.902,489.204,130.046,484.132,124.986z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <ul class="sub-menu">
+                                    <li><a href="/">EN</a></li>
+                                    <li><a href="/">GERMANY</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="content-wraper">
+            <section class="cd-section" id="landing-page-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="title" data-aos="fade-up-new" data-aos-offset="-200" data-aos-duration="500"
+                                data-aos-easing="ease-in-out" data-aos-mirror="false"
+                                data-aos-anchor-placement="top-center">The World's Leading Investment
+                                Using Crypto FINTECH <span>GAM</span></div>
+                            <div class="checkmark__group" data-aos="fade-up-new" data-aos-offset="-200"
+                                data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out"
+                                data-aos-mirror="false" data-aos-anchor-placement="top-center">
+                                <div class="checkmark__group__row">
+                                    <div class="checkmark__group__icon"> <svg width="1em" height="1em"
+                                            viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132"
+                                                stroke="currentColor" stroke-width="0.5"></path>
+                                        </svg></div>
+                                    <div class="checkmark__group__text">Qũy đầu tư <span>toàn cầu </span>với đội ngũ
+                                        chuyên nghiệp</div>
+                                </div>
+                                <div class="checkmark__group__row">
+                                    <div class="checkmark__group__icon"> <svg width="1em" height="1em"
+                                            viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132"
+                                                stroke="currentColor" stroke-width="0.5"></path>
+                                        </svg></div>
+                                    <div class="checkmark__group__text">Sử dụng <span>duy nhất USDT </span>cho các danh
+                                        mục đầu tư </div>
+                                </div>
+                                <div class="checkmark__group__row">
+                                    <div class="checkmark__group__icon"> <svg width="1em" height="1em"
+                                            viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132"
+                                                stroke="currentColor" stroke-width="0.5"></path>
+                                        </svg></div>
+                                    <div class="checkmark__group__text">Tăng danh mục đầu tư của bạn bằng cách kiếm
+                                        <span>lãi suất lên đến 50% / năm </span>trên USDT của bạn</div>
+                                </div>
+                                <div class="checkmark__group__row">
+                                    <div class="checkmark__group__icon"> <svg width="1em" height="1em"
+                                            viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132"
+                                                stroke="currentColor" stroke-width="0.5"></path>
+                                        </svg></div>
+                                    <div class="checkmark__group__text">Qũy bảo hiểm vốn <span>an toàn </span>và hoàn
+                                        toàn <span>độc lập</span></div>
+                                </div>
+                                <div class="checkmark__group__row">
+                                    <div class="checkmark__group__icon"> <svg width="1em" height="1em"
+                                            viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M12.76 2.366l-6.48 6.4A.828.828 0 015.7 9a.828.828 0 01-.581-.234l-3.879-4a.785.785 0 010-1.132.836.836 0 011.161 0L5.7 7.068l5.9-5.834a.836.836 0 011.16 0c.321.313.321.82 0 1.132"
+                                                stroke="currentColor" stroke-width="0.5"></path>
+                                        </svg></div>
+                                    <div class="checkmark__group__text">Rút tiền <span>24/7 </span>qua <span>TRC20
+                                        </span>& <span>BEP20 </span></div>
+                                </div>
+                            </div>
+                            <div class="group-tab" id="tab">
+                                <ul>
+                                    <li><a class="active" data-tab="#tab1">CRYPTO</a></li>
+                                    <li><a data-tab="#tab2">FOREX</a></li>
+                                    <li><a data-tab="#tab3">STOCK</a></li>
+                                </ul>
+                                <div class="tab-view" id="tab1">
+                                    <div class="table">
+                                        <div class="table__row">
+                                            <div class="table__col number"> 1</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>Bitcoin<div class="name__summary"> </div>
+                                                BTC
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$63,935.88<div class="group__summary">
+                                                </div>+2.45%
+                                            </div>
+                                            <div class="table__col price">$1,192,629,199,614.00</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/bitcoin/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col number"> 2</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>Ethereum<div class="name__summary">
+                                                </div>ETH
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$2,371.52<div class="group__summary">
+                                                </div>+6.98%
+                                            </div>
+                                            <div class="table__col price">$273,828,161,763.75</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/ethereum/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col number"> 3</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>Binance Coin<div class="name__summary">
+                                                </div>BNB
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$559.90<div class="group__summary error">
+                                                </div>-2.76%
+                                            </div>
+                                            <div class="table__col price">$86,522,933,656.29</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/binance-coin/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-view hidden" id="tab2">
+                                    <div class="table">
+                                        <div class="table__row">
+                                            <div class="table__col number"> 1</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>EURUSD<div class="name__summary"> </div>
+                                                EU
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$63,935.88<div class="group__summary">
+                                                </div>+2.45%
+                                            </div>
+                                            <div class="table__col price">$1,192,629,199,614.00</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/bitcoin/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col number"> 2</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>GBPUSD<div class="name__summary"> </div>
+                                                GU
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$2,371.52<div class="group__summary">
+                                                </div>+6.98%
+                                            </div>
+                                            <div class="table__col price">$273,828,161,763.75</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/ethereum/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col number"> 3</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>XAUUSD<div class="name__summary"> </div>
+                                                XAU
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$559.90<div class="group__summary error">
+                                                </div>-2.76%
+                                            </div>
+                                            <div class="table__col price">$86,522,933,656.29</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/binance-coin/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-view hidden" id="tab3">
+                                    <div class="table">
+                                        <div class="table__row">
+                                            <div class="table__col number"> 1</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>TESLA<div class="name__summary"> </div>
+                                                TSLA
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$63,935.88<div class="group__summary">
+                                                </div>+2.45%
+                                            </div>
+                                            <div class="table__col price">$1,192,629,199,614.00</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/bitcoin/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col number"> 2</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>FACEBOOK<div class="name__summary">
+                                                </div>FB
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$2,371.52<div class="group__summary">
+                                                </div>+6.98%
+                                            </div>
+                                            <div class="table__col price">$273,828,161,763.75</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/ethereum/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                        <div class="table__row">
+                                            <div class="table__col number"> 3</div>
+                                            <div class="table__col name">
+                                                <div class="name__text"> </div>COINBASE<div class="name__summary">
+                                                </div>COIN
+                                            </div>
+                                            <div class="table__col group__price">
+                                                <div class="group__text"></div>$559.90<div class="group__summary error">
+                                                </div>-2.76%
+                                            </div>
+                                            <div class="table__col price">$86,522,933,656.29</div>
+                                            <div class="table__col chart"> <img
+                                                    src="https://crypto.com/price/coin-data/binance-coin/sparkline.png"
+                                                    alt="alt"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cd-section" id="landing-page-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-flex align-items-center flex-wrap">
+                            <div class="left" data-aos="fade-up-new" data-aos-duration="500"
+                                data-aos-easing="ease-in-out" data-aos-mirror="false"
+                                data-aos-anchor-placement="top-center" data-aos-offset="-250"><video
+                                    src="./assets/video/Fintech_video.mp4" width="100%" autoplay loop></video></div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex align-items-center flex-wrap" data-aos="fade-up-new"
+                            data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false"
+                            data-aos-anchor-placement="top-center">
+                            <h2 class="sub-title">We have see anything</h2>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                itaque quod nemo, unde nihil quo nam qui neque doloremque nesciunt nostrum suscipit,
+                                voluptate facere, natus cumque? Incidunt nesciunt architecto quisquam!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cd-section" id="landing-page-3">
+                <div class="container fintechgam" id="fintechgam">
+                    <div class="row">
+                        <div class="fintechgam-background"></div>
+                        <div class="col-md-6">
+                            <div class="fintechgam-transform">
+                                <div class="fintechgam-phone">
+                                    <div class="fintechgam-phone-border"></div><img class="fintechgam-phone-view"
+                                        src="./assets/images/phone.png" alt="" srcset="">
+                                </div>
+                                <div class="fintechgam-text"><img class="fintechgam-text--first"
+                                        src="./assets/images/text-icon1.png" alt="" srcset=""><img
+                                        class="fintechgam-text--second" src="./assets/images/text-icon2.png" alt=""
+                                        srcset=""></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 fintechgam-right">
+                            <h5 class="title text-color-main">USDT EARN</h5>
+                            <h2>
+                                <div data-aos="fade-up" data-aos-anchor-placement="top-center">Deposit only USDT</div>
+                                <div data-aos="fade-up" data-aos-anchor-placement="top-center">earn interest</div>
+                            </h2>
+                            <div class="upto">
+                                <div class="upto--content" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                    data-aos-offset="-250">
+                                    <div class="upto--content-title">Up to</div>
+                                    <h2 class="text-color-main"><span class="number">1.2</span><span>%</span>/week</h2>
+                                    <div class="upto--content-title">p.a. on USDT</div>
+                                </div>
+                            </div>
+                            <div class="upto">
+                                <div class="upto--content" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                                    data-aos-offset="-250">
+                                    <div class="upto--content-title">Up to</div>
+                                    <h2 class="text-color-main"><span class="number">50</span><span>%</span>/year</h2>
+                                    <div class="upto--content-title">p.a. on USDT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cd-section" id="landing-page-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div data-aos="fade-up-new" data-aos-duration="500" data-aos-easing="ease-in-out"
+                                data-aos-mirror="false" data-aos-anchor-placement="top-center">
+                                <h3 class="heading">OUR VISION</h3>
+                            </div>
+                            <div data-aos="fade-up-new" data-aos-duration="500" data-aos-deplay="400"
+                                data-aos-easing="ease-in-out" data-aos-mirror="false"
+                                data-aos-anchor-placement="top-center">
+                                <h2>Global
+                                    Origanization</h2>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div data-aos="fade-up-new" data-aos-duration="500" data-aos-deplay="800"
+                                data-aos-easing="ease-in-out" data-aos-mirror="false"
+                                data-aos-anchor-placement="top-center"><img class="img-center"
+                                    src="./assets/images/logo-08.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="block-6">
+                <div class="container">
+                    <h2 class="title">PARTNER</h2>
+                    <div class="row mt-5">
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-bina.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-none.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-arring.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-fen.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-alph.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-ken.png" alt=""></div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-mon.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-kos.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-rep.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-ngc.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-qsn.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-ld.png" alt=""></div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-ankr.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-g1.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-gate-io.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-hbtc.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-jrr.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-au21.png" alt=""></div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-ledgerprime.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-okex.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-gfs.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-spark.png" alt=""></div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-woodstock.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-2"><img src="./assets/images/partner/backed-zb.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="block-7">
+                <div class="container" id="contract">
+                    <h2 class="title">CONTACT US </h2>
+                    <div class="description">OUR SUPPORT TEAM 24/7 AVAILABLE </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-title">OFFICIAL CONTACTS:</div><a class="contact-item">
+                                <div class="contact-item-icon"> <i class="fas fa-envelope-open-text"></i></div>
+                                <div class="contact-item-text">support@fintechgam.com</div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-title">PUBLIC GROUPS:</div><a class="contact-item"
+                                href="https://t.me/fintechgamnews">
+                                <div class="contact-item-icon"> <i class="fab fa-telegram-plane"></i></div>
+                                <div class="contact-item-text">Telegram Support</div>
+                            </a><a class="contact-item" href="https://t.me/Fintechgamofficialgroup">
+                                <div class="contact-item-icon"> <i class="fab fa-telegram-plane"></i></div>
+                                <div class="contact-item-text"> Telegram Office<i class="fas fa-globe-asia"></i>Group
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-title">SOCIAL NETWORKS:</div><a class="contact-item"
+                                href="https://www.twitter.com/fintechgam">
+                                <div class="contact-item-icon"> <i class="fab fa-twitter"></i></div>
+                                <div class="contact-item-text">Twitter Profile</div>
+                            </a><a class="contact-item"
+                                href="https://www.facebook.com/Fintech-Global-Asset-Management-2115825615176609">
+                                <div class="contact-item-icon"> <i class="fab fa-facebook-f"></i></div>
+                                <div class="contact-item-text">Facebook Page</div>
+                            </a><a class="contact-item">
+                                <div class="contact-item-icon"> <i class="fab fa-youtube"></i></div>
+                                <div class="contact-item-text">YouTube Channel</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="block-lang">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="fixed-block lang-block"><a class="wrap"
+                                    href="https://t.me/Fintechgamofficialgroup" target="_blank"><i
+                                        class="fab fa-telegram"><img src="https://bttnex.net/img/flags/eng.svg"
+                                            alt=""></i><span class="desc">Group</span></a><a class="wrap"
+                                    href="https://t.me/Fintechgamofficialgroup" target="_blank"><i
+                                        class="fab fa-telegram"><img src="./assets/images/irn2.svg" alt=""></i><span
+                                        class="desc">Group</span></a><a class="wrap"
+                                    href="https://t.me/Fintechgamofficialgroup" target="_blank"><i
+                                        class="fab fa-telegram"><img src="./assets/images/rus2.svg" alt=""></i><span
+                                        class="desc">Group</span></a><a class="wrap"
+                                    href="https://t.me/Fintechgamofficialgroup" target="_blank"><i
+                                        class="fab fa-telegram"><img src="https://bttnex.net/img/flags/eng.svg"
+                                            alt=""></i><span class="desc">Group</span></a><a class="wrap"
+                                    href="https://t.me/Fintechgamofficialgroup" target="_blank"><i
+                                        class="fab fa-telegram"><img src="./assets/images/irn2.svg" alt=""></i><span
+                                        class="desc">Group</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="block-soc">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="fixed-block soc-block"><a class="wrap" href="https://t.me/fintechgamnews"
+                                    target="_blank"><i class="fab fa-telegram"></i><span class="desc">News</span></a><a
+                                    class="wrap" href="https://t.me/Fintechgamofficialgroup" target="_blank"><i
+                                        class="fab fa-telegram"><img src="https://bttnex.net/img/flags/eng.svg"
+                                            alt=""></i><span class="desc">Group</span></a><a class="wrap"
+                                    href="https://youtube.com/channel/UCw3ck_M-JGnEkAph4Bb2HYQ" target="_blank"><i
+                                        class="fab fa-youtube"></i></a><a class="wrap"
+                                    href="https://www.facebook.com/Fintech-Global-Asset-Management-2115825615176609"
+                                    target="_blank"><i class="fab fa-facebook-f"></i></a><a class="wrap"
+                                    href="https://www.twitter.com/fintechgam" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="certificate dflex justify-content-start"></div>
+                        <div class="hr"></div>
+                        <div class="copyright">
+                            <div class="copyright__text">Copyright © 2018 - 2021 Fintechgam.com. All rights reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/libs/jquery-3.6.0.min.js"> </script>
+    <script src="./assets/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./assets/libs/aos/aos.js"></script>
+    <script src="./assets/libs/slick/slick.min.js"></script>
+    <script defer src="././assets/js/main.min.js"></script>
+</body>
+
+</html>

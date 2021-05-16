@@ -1,0 +1,67 @@
+.menu-w.color-scheme-dark {
+    background-color: #fff !important
+}
+
+.menu-w.color-scheme-dark ul.main-menu>li>a {
+    color: #000 !important
+}
+
+.menu-w.color-scheme-dark .logged-user-w {
+    border-bottom-color: rgb(129 122 122/21%) !important
+}
+
+.menu-w.color-scheme-dark .logged-user-w .avatar-w {
+    border-color: #3030304f !important
+}
+
+.menu-w.menu-layout-compact ul.main-menu>li.sub-header {
+    font-size: 14px !important;
+    border-bottom: 1px solid #77767638 !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+    margin-left: -25px !important;
+    margin-right: -25px !important
+}
+
+.menu-w ul.main-menu>li.sub-header span {
+    padding-left: 29px
+}
+
+.menu-position-side.menu-w.menu-layout-compact .element-search,
+.menu-position-side.menu-w.menu-layout-compact .menu-actions {
+    border-bottom: 1px solid rgb(105 101 101/21%) !important
+}
+
+.menu-actions {
+    color: #474444d1
+}
+
+.menu-actions {
+    margin-left: -37px
+}
+
+.menu-w.color-scheme-dark .logged-user-w .logged-user-role {
+    color: #040318 !important
+}
+
+.logged-user-name {
+    color: #000
+}
+
+.menu-position-side.menu-w.color-scheme-dark .logo-w {
+    background-color: rgb(255 255 255) !important
+}
+
+.menu-w .logo-w img {
+    width: 180px !important;
+    margin-top: -8px
+}
+
+.menu-w.color-scheme-dark .logged-user-w {
+    margin-top: -16px !important
+}
+
+.menu-w.sub-menu-style-inside.sub-menu-color-bright ul.main-menu>li.active>a span,
+.menu-w.sub-menu-style-inside.sub-menu-color-dark ul.main-menu>li.active>a span {
+    color: #000 !important
+}

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal office - Fintech Global Asset Management</title>
+    <meta charset=utf-8>
+    <meta content="ie=edge" http-equiv=x-ua-compatible>
+    <meta content="template language" name=keywords>
+    <meta content="Fintech Global Asset Management" name=author>
+    <meta content="Fintech Global Asset Management" name=description>
+    <meta content="width=device-width, initial-scale=1" name=viewport>
+    <link rel=icon href=../img/favicon-white.ico type=image/x-icon>
+    <link rel="shortcut icon" href=../img/favicon-white.ico type=image/x-icon>
+    <link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5>
+    <meta name=msapplication-TileColor content=#da532c>
+    <meta name=theme-color content=#3498db>
+    <link href=../js/bower_components/select2/dist//css/select2.min.css rel=stylesheet>
+    <link href=../js/bower_components/bootstrap-daterangepicker/daterangepicker.css rel=stylesheet>
+    <link href=../js/bower_components/dropzone/dist/dropzone.css rel=stylesheet>
+    <link href=../js/bower_components/datatables.net-bs//css/dataTables.bootstrap.min.css rel=stylesheet>
+    <link href=../js/bower_components/fullcalendar/dist/fullcalendar.min.css rel=stylesheet>
+    <link href=../js/bower_components/perfect-scrollbar//css/perfect-scrollbar.min.css rel=stylesheet>
+    <link href=../js/bower_components/slick-carousel/slick/slick.css rel=stylesheet>
+    <link href="../css/maince5a.css?version=4.4.1" rel=stylesheet>
+    <link href=../js/icon_fonts_assets/font-awesome/css/font-awesome.min.css rel=stylesheet>
+    <link href=../js/uikit/css/uikit.css rel=stylesheet>
+    <link rel=stylesheet href=../css/timeline.css>
+    <script src=../js/bower_components/jquery/dist/jquery.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <link href=../css/micromodal.css rel=stylesheet>
+    <link href=../css/appextend.css rel=stylesheet>
+    <link href=../css/custom.css rel=stylesheet>
+    <style>
+        .content-i {
+            min-height: 800px
+        }
+
+        .logged-user-name {
+            color: white !important;
+            font-size: 20px !important
+        }
+
+        .menu-mobile.color-scheme-dark .logged-user-w .logged-user-role {
+            color: white !important;
+            font-size: 14px !important
+        }
+    </style>
+    <script src=//sdk.accountkit.com/en_US/sdk.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script type="12795216b77674af9b3a8ff5-text/javascript">
+        AccountKit_OnInteractive = function() {
+            AccountKit.init({
+                appId: "1107840142753456",
+                state: "123",
+                version: "v1.0",
+                fbAppEventsEnabled: true,
+                debug: true,
+                redirect: "https://localhost:5001/fb-kit"
+            });
+        };
+    </script>
+    <script src=//unpkg.com/micromodal/dist/micromodal.min.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script type="12795216b77674af9b3a8ff5-text/javascript">
+        MicroModal.init();
+    </script>
+    <link rel=stylesheet href=../css/update.css>
+
+<body class="full-screen with-content-panel menu-position-side menu-side-left">
+    <div class="all-wrapper solid-bg-all">
+        <div class=layout-w>
+            <div class="menu-mobile menu-activated-on-click color-scheme-dark">
+                <div class=mm-logo-buttons-w><a class=mm-logo href='./member.html'><span>Fintech Global Asset
+                            Management</span></a>
+                    <div class=mm-buttons>
+                        <div class=content-panel-open>
+                            <div class="os-icon os-icon-grid-circles"></div>
+                        </div>
+                        <div class=mobile-menu-trigger>
+                            <div class="os-icon os-icon-hamburger-menu-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=menu-and-user>
+                    <div class=logged-user-w>
+                        <!-- <div class=avatar-w><img alt="" src=../img/avatar1.jpg></div>  -->
+                        <div class=logged-user-info-w>
+                            <div class=logged-user-name id=chang-user>HOANG DO THAI</div> <button id=changefunc onclick="changeuser()"><i id=eye_click1 class="fa fa-eye" aria-hidden="true"></i></button>
+                            <input type="hidden" id=user-value value="HO*********">
+                            <div class=logged-user-role>F01204908119121</div>
+                            <input type="hidden" class=logged-hidden value="F0120*******121">
+                        </div>
+                    </div>
+                    <ul class=main-menu>
+                        <li>
+                            <a href='./member.html'>
+                                <div class=icon-w>
+                                    <div class="os-icon os-icon-layout"></div>
+                                </div><span>Dashboard</span>
+                            </a>
+                        <li class=has-sub-menu>
+                            <a href=#>
+                                <div class=icon-w>
+                                    <div class="os-icon os-icon-layers"></div>
+                                </div><span>Invest</span>
+                            </a>
+                            <ul class=sub-menu>
+                                <li><a href="./my_invest_packages.html">My investment package</a>
+                                <li><a href="./list_invest_packages_available.html">List of investment
+                                        packages</a>
+                            </ul>
+                        <li class=has-sub-menu>
+                            <a href=#>
+                                <div class=icon-w>
+                                    <div class="os-icon os-icon-package"></div>
+                                </div><span>Finance</span>
+                            </a>
+                            <ul class=sub-menu>
+                                <li><a href="./deposit.html">Deposit account</a>
+
+                                <li><a href="./withdrawal.html">Withdraw money</a>
+                                <li><a href="./transaction_history.html">Transaction history <strong
+                                            class="badge badge-success">0</strong></a>
+                            </ul>
+                        <li class=has-sub-menu>
+                            <a href=#>
+                                <div class=icon-w>
+                                    <div class="os-icon os-icon-users"></div>
+                                </div><span>Infomations</span>
+                            </a>
+                            <ul class=sub-menu>
+                                <li><a href="./base.html">Basic information</a>
+                                <li><a href="./change_password.html">Change Password</a>
+                            </ul>
+                        <li>
+                            <a href="./documents.html">
+                                <div class=icon-w>
+                                    <div class="os-icon os-icon-file-text"></div>
+                                </div><span>Document</span>
+                            </a>
+
+                        <li class=has-sub-menu>
+                            <a href=#>
+                                <div class=icon-w>
+                                    <div class="os-icon os-icon-tasks-checked"></div>
+                                </div><span>General Management</span>
+                            </a>
+                            <ul class=sub-menu>
+                                <li><a href="./message.html">Message</a>
+                                    <!-- <li><a href="./manager.html">Manager</a> -->
+
+                                <li><a href="./ticket.html">Tickest</a>
+                                <li><a href="./activity_log.html">Activity log</a>
+                                <li><a href="./setting.html">Setting</a>
+                            </ul>
+                        <li class=has-sub-menu>
+                            <a href=#>
+                                <div class=icon-w>
+                                    <div class="os-icon os-icon-life-buoy"></div>
+                                </div><span>Help</span>
+                            </a>
+                            <ul class=sub-menu>
+                                <li><a href=/member/help/verify>Account verification?</a>
+                                <li><a href=/member/help/accountr>Deposit/Withdrawal/Transfer?</a>
+                                <li><a href=/member/help/invest>Add investment package?</a>
+                                <li><a href=/member/help/other>Other instructions</a>
+                            </ul>
+                        <li>
+                            <a href="./login.html">
+                                <div class=icon-w>
+                                    <div class="os-icon os-icon-signs-11"></div>
+                                </div><span>Logout</span>
+                            </a>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="menu-w selected-menu-color-light menu-has-selected-link menu-activated-on-click color-scheme-dark color-style-default sub-menu-color-bright menu-position-side menu-side-left menu-layout-compact sub-menu-style-inside">
+                <div class=logged-user-toggler-arrow><a title="Đăng xuất" id=logout href="./login.html"
+                        style=color:white;text-decoration:none> <i class="os-icon os-icon-signs-11"></i></a></div>
+                <div class="logo-w menu-size"><a class=logo href="/fintechgame/"> <img src=../img/fintech-full-green.png
+                            width=200>
+                    </a></div>
+                <div class="logged-user-w avatar-inline">
+                    <div class=logged-user-i>
+                        <!-- <div class=avatar-w><img alt="" src=../img/avatar1.jpg></div> -->
+                        <div class=logged-user-info-w>
+                            <div class=logged-user-name id=chang-user1>HOANG DO THAI</div> <button id=changefunc onclick="changeuser1()"><i id=eye_click class="fa fa-eye" aria-hidden="true"></i></button>
+                            <input type="hidden" id=user-value1 value="HO*********">
+                            <div class=logged-user-role>F01204908119121</div>
+                            <input type="hidden" class=logged-hidden value="F0120*******121">
+                        </div>
+
+                    </div>
+                    <div class=row style="margin-top:10px;margin-right:-15px !important">
+                        <div class=col-sm-4>
+                            <div class=value-pair style=" cursor:pointer" title="Email verified">
+                                <div class=label style="color:#000 !important">Email</div>
+                                <div class="value badge badge-pill badge-success"><i class="fa fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=col-sm-4>
+                            <div class=value-pair style=cursor:pointer;padding-left:12px title="ID not verify">
+                                <div class=label style="color:#000 !important">Id</div>
+                                <div class="value badge badge-pill badge-danger"><i class="fa fa fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=col-sm-4 style=text-align:center>
+                            <div class=value-pair style=cursor:pointer title="Not secure">
+                                <div class=label style="color:#000 !important">OTP</div>
+                                <div class="value badge badge-pill badge-danger"><i class="fa fa fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=menu-actions><span style=font-weight:bold;font-size:14px;padding-right:50px>Available:</span>
+                    <strong style=margin-right:-50px id=USD>29.00 USDT</strong>                    
+                    <input type="hidden" id=USD-hidden value="**.** USDT">
+                </div>
+                <h1 class=menu-page-header>Page Header</h1>
+                <ul class=main-menu style=margin-top:-15px>
+                    <li class=sub-header><span>Invest</span>
+                    <li class=selected>
+                        <a href='./member.html'>
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-layout"></div>
+                            </div><span>Overview</span>
+                        </a>
+                    <li class=has-sub-menu>
+                        <a href=#>
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-layers"></div>
+                            </div><span>Invest Packages</span>
+                        </a>
+                        <div class=sub-menu-w>
+                            <div class=sub-menu-header>Invest Packages</div>
+                            <div class=sub-menu-icon><i class="os-icon os-icon-package"></i></div>
+                            <div class=sub-menu-i>
+                                <ul class=sub-menu>
+                                    <li><a href="./my_invest_packages.html">My Invest</a>
+                                    <li><a href="./list_invest_packages_available.html">Investments</a>
+                                </ul>
+                            </div>
+                        </div>
+                    <li class=sub-header><span>Financial</span>
+                    <li class=has-sub-menu>
+                        <a href=#>
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-package"></div>
+                            </div><span>Financial</span>
+                        </a>
+                        <div class=sub-menu-w>
+                            <div class=sub-menu-header>Financial</div>
+                            <div class=sub-menu-icon><i class="os-icon os-icon-package"></i></div>
+                            <div class=sub-menu-i>
+                                <ul class=sub-menu>
+                                    <li><a href="./deposit.html">Deposit</a>
+
+                                    <li><a href="./withdrawal.html">Withdrawal</a>
+                                    <li><a href="./transaction_history.html">history <strong
+                                                class="badge badge-success">0</strong></a>
+                                </ul>
+                            </div>
+                        </div>
+                    <li class=has-sub-menu>
+                        <a href=#>
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-ui-65"></div>
+                            </div><span>Infomations</span>
+                        </a>
+                        <div class=sub-menu-w>
+                            <div class=sub-menu-header>Profile</div>
+                            <div class=sub-menu-icon><i class="os-icon os-icon-file-text"></i></div>
+                            <div class=sub-menu-i>
+                                <ul class=sub-menu>
+                                    <li><a href="./base.html">profile</a>
+                                    <li><a href="./change_password.html">Change Password</a>
+                                </ul>
+                            </div>
+                        </div>
+                    <li>
+                        <a href="./documents.html">
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-file-text"></div>
+                            </div><span>Documents</span>
+                        </a>
+                    <li class=sub-header><span>Common Management</span>
+                    <li>
+                        <a href="./message.html">
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-mail"></div>
+                            </div><span>Messages</span> <strong class="badge badge-danger">0</strong>
+                        </a>
+                        <!-- <li>
+                        <a href="./manager.html">
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-users"></div>
+                            </div><span>Leadership</span>
+                        </a> -->
+
+                    <li>
+                        <a href="./ticket.html">
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-edit-32"></div>
+                            </div><span>Tickets</span> <strong class="badge badge-danger">0</strong>
+                        </a>
+                    <li>
+                        <a href="./activity_log.html">
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-tasks-checked"></div>
+                            </div><span>Activity Logs</span>
+                        </a>
+                    <li>
+                        <a href="./setting.html">
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-zap"></div>
+                            </div><span>Setting</span>
+                        </a>
+                    <li class=has-sub-menu>
+                        <a href=#>
+                            <div class=icon-w>
+                                <div class="os-icon os-icon-life-buoy"></div>
+                            </div><span>Help</span>
+                        </a>
+                        <div class=sub-menu-w>
+                            <div class=sub-menu-header>Help</div>
+                            <div class=sub-menu-icon><i class="os-icon os-icon-life-buoy"></i></div>
+                            <div class=sub-menu-i>
+                                <ul class=sub-menu>
+                                    <li><a href=/member/help/verify>How to kyc?</a>
+                                    <li><a href=/member/help/account>How to fund, transfer, withdrawal?</a>
+                                    <li><a href=/member/help/invest>How to invest?</a>
+                                    <li><a href=/member/help/other>Other documents.</a>
+                                </ul>
+                            </div>
+                        </div>
+                    <li>
+                        <a title="Đăng xuất" id=logout href="./login.html">
+                            <div class="icon-w">
+                                <div class="os-icon os-icon-signs-11"></div>
+                            </div>
+                            <span>Logout</span>
+                        </a>
+                </ul>
+            </div>
+            <div class=content-w>
+                <div class="top-bar color-scheme-bright">
+                    <div class=top-menu-controls>
+                        <div><span style=color:white>Server time:</span> <span id=servertime
+                                style=color:white;font-weight:bold></span></div>
+                        <div class=messages-notifications title="Thông báo quan trọng"><i
+                                class="os-icon os-icon-mail-14" title="Thông báo quan trọng" style=cursor:pointer></i>
+                            <div class=new-messages-count>0</div>
+                        </div>
+                        <div class="top-icon top-settings" title=Shop><i class="fa fa-cart-plus" title=Shop
+                                style=cursor:pointer></i></div>
+                        <div class=logged-user-w></div>
+                    </div>
+                </div>
+                <div class=content-i>
+                    <div class=content-box>
+                        <div class=element-wrapper>
+                            <h6 class=element-header>Tickets</h6>
+                            <div class=element-box>
+                                <h5>No ticket yet</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style=display:table;width:100% data-bind="with: contactUs" id=newFooter>
+                    <div style=display:table-row;width:100%>
+                        <div style=display:table-cell></div>
+                        <div style=display:table-cell;padding:16px>
+                            <div id=error-contact-us class="text-center alert alert-danger"
+                                style=display:none;margin-bottom:0><span data-bind="text: error"></span> <button
+                                    type=button class=close data-bind="click: hideError">×</button></div>
+                            <div id=success-contact-us class="text-center alert alert-success"
+                                style=display:none;margin-bottom:0><span
+                                    data-bind="text: lang.get('contact.us.success')">Thank you for contacting us. We
+                                    will reply to you shortly</span> <button type=button class=close
+                                    data-bind="click: hideError">×</button></div>
+                        </div>
+                    </div>
+                    <div style=display:table-row;width:100%>
+                        <div id=copyright-block
+                            style=display:table-cell;vertical-align:middle;float:none;width:60%;padding-left:13px;padding-right:16px>
+                            <div style=display:table;margin-top:-95px>
+                                <div id=copyright-logo style=display:table-cell;vertical-align:middle><img
+                                        src=../img/fintech-full-green.png style=height:73px alt=""></div>
+                                <div id=copyright-text style=display:table-cell;vertical-align:middle;padding-left:25px>
+                                    <p style=margin:0;margin-top:5px><span
+                                            data-bind="text: lang.get('copyright.part.one')">© 2019 Fintech Global Asset
+                                            Management. All rights reserved</span> <br> <span
+                                            data-bind="text: lang.get('copyright.part.two')">All copying is forbidden
+                                            without written permission of the owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=display-type></div>
+    </div>
+    <div class=transparentCover></div>
+    <div class="modal micromodal-slide" id=modal-requiredVerifyDocuments aria-hidden=true>
+        <div class=modal__overlay tabindex=-1 data-micromodal-close>
+            <div class=modal__container role=dialog aria-modal=true aria-labelledby=modal-1-title>
+                <header class=modal__header>
+                    <h2 class=modal__title id=modal-1-title></h2><button class=modal__close aria-label="Close modal"
+                        data-micromodal-close></button>
+                </header>
+                <main class=modal__content id=modal-1-content>
+                    <p>Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself.
+                        Also, <code>esc</code> to close modal.
+                </main>
+                <footer class=modal__footer style=text-align:center><button class="modal__btn modal__btn-primary"
+                        onclick="if (!window.__cfRLUnblockHandlers) return false; modal.RequiredUploadDocument.OnClick.Ok()"
+                        data-cf-modified-12795216b77674af9b3a8ff5-="">Continue</button> <button class=modal__btn
+                        data-micromodal-close aria-label="Close this dialog window">Close</button></footer>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide" id=modal-1 aria-hidden=true>
+        <div class=modal__overlay tabindex=-1 data-micromodal-close>
+            <div class=modal__container role=dialog aria-modal=true aria-labelledby=modal-1-title>
+                <header class=modal__header>
+                    <h2 class=modal__title id=modal-1-title>Micromodal</h2><button class=modal__close
+                        aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class=modal__content id=modal-1-content>
+                    <p>Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself.
+                        Also, <code>esc</code> to close modal.
+                </main>
+                <footer class=modal__footer style=text-align:center><button class="modal__btn modal__btn-primary"
+                        onclick="if (!window.__cfRLUnblockHandlers) return false; modal.RequiredUploadDocument.OnClick.Ok()"
+                        data-cf-modified-12795216b77674af9b3a8ff5-="">Continue</button> <button class=modal__btn
+                        data-micromodal-close aria-label="Close this dialog window">Close</button></footer>
+            </div>
+        </div>
+    </div>
+    <div class="ui-widget-overlay ui-front" style=z-index:100></div>
+    
+    <script src=../js/bower_components/popper.js/dist/umd/popper.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/moment/moment.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/chart.js/dist/Chart.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/select2/dist/js/select2.full.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/jquery-bar-rating/dist/jquery.barrating.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/ckeditor/ckeditor.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap-validator/dist/validator.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap-daterangepicker/daterangepicker.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/dropzone/dist/dropzone.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/editable-table/mindmup-editabletable.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/datatables.net/js/jquery.dataTables.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/fullcalendar/dist/fullcalendar.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/tether/dist/js/tether.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/slick-carousel/slick/slick.min.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/util.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/alert.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/button.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/carousel.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/collapse.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/dropdown.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/modal.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/tab.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/tooltip.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/bower_components/bootstrap/js/dist/popover.js
+        type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/sticky-sidebar.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=//nosir.github.io/cleave.js/dist/cleave.min.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/appextend.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/utils/ajaxUtils.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/pages/fintech_popup.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/pages/common.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/notify.min.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/uikit/js/uikit.min.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/maince5a.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/common.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/checkoutpage.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/facebook-accountkit.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/signalr/signalr.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src=../js/socket.js type="12795216b77674af9b3a8ff5-text/javascript"></script>
+    <script src="../js/scripts.js"></script>
+    <div id=fb-root></div>
+    <script type="12795216b77674af9b3a8ff5-text/javascript">
+            window.fbAsyncInit = function() {
+                FB.init({
+                    xfbml: true,
+                    version: 'v3.2'
+                });
+            };
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    <div class=fb-customerchat attribution=setup_tool page_id=2115825615176609 theme_color=#0084ff
+        logged_in_greeting="Do you need help? Please chat with us!"
+        logged_out_greeting="Do you need help? Please chat with us!"></div>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="12795216b77674af9b3a8ff5-|49" defer=""></script>
