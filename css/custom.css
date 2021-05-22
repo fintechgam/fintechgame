@@ -368,12 +368,13 @@ a.button_info {
     grid-template-columns: 50% auto;
 }
 .box_title_popup {
-    font-weight: 600;
-    color: #000000;
-}
-.box_content_popup {
     font-weight: 500;
     color: #5c5e5c;
+}
+.box_content_popup {
+    font-weight: 600;
+    color: #202020;
+
 }
 .popup .close {
     position: absolute;
