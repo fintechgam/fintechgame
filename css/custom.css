@@ -574,6 +574,19 @@ table.table.table-bordered.bottom_30 {
     grid-template-columns: 60% auto;
     grid-column-gap: 1%;
 }
+body:before {
+    background: -webkit-gradient(linear, left top, right bottom, from(#D7BBEA), to(#65A8F1));
+    background: linear-gradient(to bottom right, #4253c5, #031c38);
+}
+.vertical-logo{
+    width: 200px;
+}
+.text-color-white {
+    color: #ffffff !important;
+}
+label.control-label {
+    color: #ffffff;
+}
 @media only screen and (max-width: 1200px) {
     .grid_bottom_invest {
         grid-template-columns: 50% auto;
