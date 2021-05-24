@@ -587,6 +587,10 @@ body:before {
 label.control-label {
     color: #ffffff;
 }
+.font_25{
+    font-size: 20px;
+    font-weight: bold;
+}
 @media only screen and (max-width: 1200px) {
     .grid_bottom_invest {
         grid-template-columns: 50% auto;
@@ -635,6 +639,10 @@ label.control-label {
         grid-column-end: 3;
     }
 }
+.modal-footer.fix_model_footer{
+    border-color: transparent;
+    padding: 0;
+}
 @media only screen and (max-width: 768px) {
     .logged-user-info-w .logged-user-name {
         color: #ffffff !important;
@@ -677,6 +685,7 @@ label.control-label {
     }
     .right_my_invest {
         display: block;
+        padding-left: 5px;
     }
     
     canvas.chart-left {
