@@ -220,6 +220,8 @@ img.css_imgright {
     background: #d2c9c9;
     position: relative;
     margin-bottom: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .box_scale::before {
     position: absolute;
@@ -238,15 +240,18 @@ img.css_imgright {
     font-size: 13px;
 }
 .left_my_invest{
-    padding: 30px 15px;
+    padding: 15px;
     border-right: 1px solid #bfb2b2;
 }
 .center_my_invest {
-    padding: 0 15px;
+    padding: 15px;
     background: #bfb2b21c;
-    padding-top: 50px;
     border-right: 1px solid #bfb2b2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
 .title_center_invest span {
     font-weight: 500;
 }
@@ -368,13 +373,16 @@ a.button_info {
     grid-template-columns: 50% auto;
 }
 .box_title_popup {
-    font-weight: 500;
+    font-weight: 600;
     color: #5c5e5c;
+    text-align: left;
+    border-right: none !important;
 }
 .box_content_popup {
     font-weight: 600;
-    color: #202020;
-
+    color: #868686;
+    border-left: none !important;
+    text-align: right;
 }
 .popup .close {
     position: absolute;
@@ -518,48 +526,6 @@ label.form-label.title_question_buy {
 .modal-body {
     text-align: center;
 }
-button.btn.fix_next_btn {
-    padding: 9px 20px;
-    font-weight: 500;
-    background: #ffffff;
-    border-radius: 5px;
-    border: 1px solid #c1bbbb;
-}
-
-button.btn.fix_next_btn:hover {
-    background: #eaeaea;
-}
-
-.bg_white{
-    color: #000000;
-    background : #a09e9e;
-    color: #ffffff;
-}
-.bg-yellow {
-    background: yellow;
-    color: #000000;
-}
-.bg-green {
-    background: green;
-}
-.bg-blue{
-    background: blue;
-}
-.bg-red{
-    background: red;
-}
-.bg-violet{
-    background: violet;
-}
-.bg-black{
-    background :#000000;
-}
-.bg-platinum {
-    background: silver;
-}
-.bg-uranium{
-    background: slategrey;
-}
 table.table.table-bordered.bottom_30 {
     margin-bottom: 20px !important;
 }
@@ -590,6 +556,17 @@ label.control-label {
 .font_25{
     font-size: 20px;
     font-weight: bold;
+}
+.modal-dialog{
+    max-width: 400px;
+}
+.padding-1rem{
+    padding: 1rem;
+    font-weight: 600;
+}
+.text_primary{
+    color: #007bff;
+    background: transparent;
 }
 @media only screen and (max-width: 1200px) {
     .grid_bottom_invest {

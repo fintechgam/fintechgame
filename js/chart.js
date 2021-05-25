@@ -1,5 +1,5 @@
 var barChartData = {
-    labels: ["Nov-25", " ", "Jan-27", "Mar-31", "Jun-02", "Aug-04", "Otc-06"],
+    labels: ["April", " ", "May", "Jun"],
   
     datasets: [
       {
@@ -8,7 +8,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [3, 0, 4.2, 0, 0, 0, 0],
+        data: [1.3, 0, 0.7,1],
       },
       {
         label: "",
@@ -16,7 +16,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [4, 0, 2.5, 0, 0, 0, 0],
+        data: [1.5, 0, 1.4,1.5],
       },
       {
         label: "",
@@ -24,7 +24,15 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [4, 0, 1.3, 0, 0, 0, 0],
+        data: [1.2, 0, 1.3,0.8],
+      },
+      {
+        label: "",
+        backgroundColor: "#047bf8",
+        HoverBackgroundColor: "none",
+        borderColor: false,
+        borderWidth: 0,
+        data: [0.5, 0, 1.3, 1.2],
       },
     ],
   };
@@ -45,8 +53,8 @@ var barChartData = {
           ticks: {
             beginAtZero: true,
             min: 0,
-            max: 5,
-            stepSize: 1,
+            max: 2,
+            stepSize: 0.5,
           },
         },
       ],
@@ -54,7 +62,7 @@ var barChartData = {
         {
           categoryPercentage: 0.7,
           ticks: {
-            fontSize: 10,
+            fontSize: 21,
           },
         },
       ],
@@ -62,7 +70,7 @@ var barChartData = {
   };
   
   var barChartData_right = {
-    labels: ["Nov", "Jan", "Mar", "May", "Jul", "Sep"],
+    labels: ["Jan", "Feb", "Mar", "April", "May", "Jun"],
   
     datasets: [
       {
@@ -109,7 +117,7 @@ var barChartData = {
         {
           categoryPercentage: 0.7,
           ticks: {
-            fontSize: 18,
+            fontSize: 21,
           },
         },
       ],
