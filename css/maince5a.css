@@ -10880,7 +10880,7 @@ select.form-control.rounded {
 .form-group .date-input {
     position: relative
 }
-
+/* 
 .form-group .date-input:before {
     content: "\e972";
     font-family: osfont !important;
@@ -10899,11 +10899,11 @@ select.form-control.rounded {
     left: 10px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
-}
-
+} */
+/* 
 .form-group .date-input .form-control {
     padding-left: 35px
-}
+} */
 
 .form-control::-webkit-input-placeholder {
     color: rgba(0, 0, 0, .4)

@@ -8,7 +8,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [1.3, 0, 0.7,1],
+        data: [1.3, 0.7,1],
       },
       {
         label: "",
@@ -16,7 +16,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [1.5, 0, 1.4,1.5],
+        data: [1.5, 1.4,1.5],
       },
       {
         label: "",
@@ -24,7 +24,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [1.2, 0, 1.3,0.8],
+        data: [1.2, 1.3,0.8],
       },
       {
         label: "",
@@ -32,7 +32,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [0.5, 0, 1.3, 1.2],
+        data: [0.5, 1.3, 1.2],
       },
     ],
   };
