@@ -108,29 +108,29 @@
         </button>
         <div class="collapse navbar-collapse" id=navbar-toggle>
             <ul class="navbar-nav mr-auto mt-lg-0"></ul>
-            <div class="my-2 my-lg-0 auth-padding"><a class="button btn btn-link text-nav-style text-color-white"
+            <div class="my-2 my-lg-0 auth-padding"><a class="button btn btn-link text-nav-style "
                     href="../html/login.html">Log In</a>
                 <a class="button btn btn-primary text-nav-style signup-btn" href="../html/register.html">Sign Up</a>
             </div>
         </div>
     </nav>
-    <div class="container-fluid remove-padding">
+    <div class="container-fluid remove-padding mt-5">
         <div class=container id=sign-up-page>
             <div class="row justify-content-center">
                 <div class="col-md-6 remove-padding">
                     <div class="flex-wrap padding-l">
-                        <h4 class=text-center><span class=text-color-white>Sign up to Fintech</span><span
-                                class="exchange text-color-white">GAM</span></h4>
+                        <h4 class=text-center><span class="text-white">Signup to Fintech</span><span
+                                class="exchange text-white">GAM</span></h4>
                     </div>
                     <div class="form-container background-color-white">
-                        <div class="special-form-container margin-top-m"><span
-                                class="flex-wrap-text-child text-color-label text-color-white" id=already-user-label>Already a
-                                FintechGAM.com user?</span>
-                            <form class=button_to action=/login><a class="btn btn-secondary btn-block margin-top-m"
+                        <div class="special-form-container margin-top-m"><div
+                                class="flex-wrap-text-child text-color-label text-center mb-2" id=already-user-label>Already a
+                                FintechGAM.com user?</div>
+                            <form class=button_to action=/login><a class="btn btn-secondary margin-top-m"
                                     id=link-with-crpyto-dot-com-app type=submit href=/login> <img width=35 height=35
                                         src=../img/fintech-smal-white.png> &nbsp;Continue as FintechGAM user </a> <input
                                     type=hidden name=ref></form>
-                            <div class="flex-wrap or margin-top-l margin-bottom-l text-color-white">Or</div>
+                            <div class="flex-wrap or margin-top-l margin-bottom-l ">Or</div>
                         </div>
                         <form class="simple_form new_user" id=new_user autocomplete=false novalidate
                             accept-charset=UTF-8 method=post action=/register><input name=utf8 type=hidden value=✓>
@@ -155,17 +155,17 @@
                                     </div>
                                 </div>
                                 <div class=form-row>
-                                    <div class=col-12>
+                                    <div class="col-md-6 col-xs-12">
                                         <div class="form-group date required user_dob"><label
                                                 class="control-label date required" for=user_dob><abbr
                                                     title=required></abbr> Date of birth</label>
-                                            <div class=form-inline><input class="form-control date required fix-date"
+                                            <div class=form-inline><input class="form-control date required fix-date w-100"
                                                     max=2021-03-28 min=1871-03-28 value=2003-03-28 required
                                                     aria-required=true type=date name=user[dob] id=user_dob
                                                     x-valid=true></div>
                                         </div>
                                     </div>
-                                    <div class=col-12>
+                                    <div class="col-md-6 col-xs-12">
                                         <div class="form-group select required user_nationality"><label
                                                 class="control-label select required" for=user_nationality><abbr
                                                     title=required></abbr> Nationality</label> <select
@@ -528,10 +528,10 @@
                                                 <label class="boolean optional x-accept-tnc" for=user_agree_to_terms>
                                                     <input class="boolean optional" type=checkbox value=1
                                                         name=user[agree_to_terms] id=user_agree_to_terms x-valid=false>
-                                                    <span class="text-color-white"> I agree to the terms of the <a target=_blank
-                                                            rel="noopener noreferrer" class="text-color-white">FintechGAM.com Privacy Notice</a>
+                                                    <span class=""> I agree to the terms of the <a target=_blank
+                                                            rel="noopener noreferrer" class="">FintechGAM.com Privacy Notice</a>
                                                         and <a target=_blank rel="noopener noreferrer"
-                                                            href="" class="text-color-white">FintechGAM Terms &amp; conditions</a>. </span>
+                                                            href="" class="">FintechGAM Terms &amp; conditions</a>. </span>
                                                 </label>
                                             </div>
                                         </div>
@@ -545,7 +545,7 @@
                                                     class="boolean optional x-accept-data-collection"
                                                     for=user_agree_to_data_collection> <input class="boolean optional"
                                                         type=checkbox value=1 name=user[agree_to_data_collection]
-                                                        id=user_agree_to_data_collection x-valid=false> <span class="text-color-white">I agree
+                                                        id=user_agree_to_data_collection x-valid=false> <span class="">I agree
                                                         that the data above will be used to check and notify me on
                                                         whether Fintechgam.com is available in my region</span> </label>
                                             </div>
@@ -561,12 +561,12 @@
                                 </div>
                             </div>
                             <div class="form-actions flex-wrap"><input type=submit name=commit value="Create account"
-                                    class="btn btn-default btn btn-primary btn-block"></div><input
+                                    class="btn btn-default btn btn-primary w-100 fix_btn_signin"></div><input
                                 name=__RequestVerificationToken type=hidden
                                 value=CfDJ8F63JPt4xsJAqQ7PZCL63WjCxdRQU4k_PGHpDDG_9AFtdjNogbdipBlZDe13z3ueGpZF-f8_lYtQKDi1HVCGk3lyPUXoCqfUXzjBjH9x8h-IKAXEgBgSiGhKTuyrjQIRigqICgkD5Ua8ND0hb-BSMC8>
                         </form>
                         <div class=special-form-container>
-                            <div class="login-footer-wrapper flex-container">
+                            <div class="login-footer-wrapper text-center">
                                 <div class=flex-item>Already have an account? <a href=/login>Login here</a></div>
                             </div>
                         </div>
@@ -574,11 +574,11 @@
                 </div>
             </div>
         </div>
-        <div class="flex-wrap padding-l" id=footer><span class="text-center text-color-white"> <span
+        <!-- <div class="flex-wrap padding-l" id=footer><span class="text-center "> <span
                     class=institutional-image></span> <a style=color:white href="/fintechgame/">Fintech Global Asset
                     Management</a>
             </span>
-        </div>
+        </div> -->
     </div>
     <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
         data-cf-settings="85d5461af3282340f58eba73-|49" defer=""></script>

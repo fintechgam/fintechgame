@@ -1,7 +1,10 @@
-.button_to a {
-  display: inline-flex;
-  min-height: 46px;
-  align-items: center;
+.button_to a{
+  width: 100%;
+  padding: 10px 0;
+  background: #252888;
+}
+.button_to a:hover{
+  background: #252888;
 }
 .fix-date {
   min-width: calc(100% - 20px);
@@ -55,7 +58,7 @@
 body:before {
   content: "";
   position: absolute;
-  background: #0f2865 !important;
+  background: linear-gradient(180deg, rgba(0,4,36,1) 0%, rgba(9,9,121,1) 39%, rgba(8,4,139,1) 100%) !important;
 }
 #changefunc {
   position: relative;
@@ -563,13 +566,10 @@ body:before {
   background: linear-gradient(to bottom right, #4253c5, #031c38);
 }
 .vertical-logo {
-  width: 200px;
+  width: 150px;
 }
 .text-color-white {
   color: #ffffff !important;
-}
-label.control-label {
-  color: #ffffff;
 }
 .font_25 {
   font-size: 20px;
@@ -585,6 +585,30 @@ label.control-label {
 .text_primary {
   color: #007bff;
   background: transparent;
+}
+.background-color-white{
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.fix_btn_signin{
+  padding: 12px 0;
+}
+.login-footer-wrapper.flex-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+select.form-control:not([size]):not([multiple]){
+  height: 35px;
+}
+body{
+  padding: 0;
+}
+nav.navbar.navbar-expand-md.navbar-dark.nav-background-color {
+  padding: 5px 10px;
+  background: #161a44;
 }
 @media only screen and (max-width: 1200px) {
   .grid_bottom_invest {
