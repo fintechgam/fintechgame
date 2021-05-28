@@ -1,5 +1,5 @@
 var barChartData = {
-    labels: ["April", " ", "May", "Jun"],
+    labels: ["April", "May", "Jun","July"],
   
     datasets: [
       {
@@ -8,7 +8,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [1.3, 0.7,1],
+        data: [1.3, 0.7,1,1.2],
       },
       {
         label: "",
@@ -16,7 +16,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [1.5, 1.4,1.5],
+        data: [1.5, 1.4,1.5,1.6],
       },
       {
         label: "",
@@ -24,7 +24,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [1.2, 1.3,0.8],
+        data: [1.2, 1.3,0.8,0.6],
       },
       {
         label: "",
@@ -32,7 +32,7 @@ var barChartData = {
         HoverBackgroundColor: "none",
         borderColor: false,
         borderWidth: 0,
-        data: [0.5, 1.3, 1.2],
+        data: [0.5, 1.3, 1.2,1.4],
       },
     ],
   };
