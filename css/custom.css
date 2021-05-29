@@ -58,7 +58,9 @@
 body:before {
   content: "";
   position: absolute;
-  background: linear-gradient(180deg, rgb(11 15 33) 0%, rgb(18 18 78) 39%, rgb(37 34 113) 100%) !important;
+  background: linear-gradient(180deg, #021f42 2%, #002966 54%) !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #changefunc {
   position: relative;
@@ -621,7 +623,7 @@ body{
 }
 nav.navbar.navbar-expand-md.navbar-dark.nav-background-color {
   padding: 5px 10px;
-  background: #161a44;
+  background: #022043;
 }
 @media only screen and (max-width: 1200px) {
   .grid_bottom_invest {
