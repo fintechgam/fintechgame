@@ -58,7 +58,7 @@
 body:before {
   content: "";
   position: absolute;
-  background: linear-gradient(180deg, rgb(4 6 16) 0%, rgb(7 7 41) 39%, rgb(15 14 43) 100%) !important;
+  background: linear-gradient(180deg, rgb(11 15 33) 0%, rgb(26 26 97) 39%, rgb(31 28 99) 100%) !important;
 }
 #changefunc {
   position: relative;
